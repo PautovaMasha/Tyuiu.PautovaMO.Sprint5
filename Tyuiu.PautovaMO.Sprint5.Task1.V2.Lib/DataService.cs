@@ -29,10 +29,10 @@ namespace Tyuiu.PautovaMO.Sprint5.Task1.V2.Lib
                 }
 
                 result = Math.Round(result, 2);
-                fileContent += $"{x}\t{result}\n";
+                fileContent += $"{result}\n";
             }
 
-            File.WriteAllText(path, fileContent);
+            File.WriteAllText(path, fileContent.Trim());
             return path;
         }
     }
