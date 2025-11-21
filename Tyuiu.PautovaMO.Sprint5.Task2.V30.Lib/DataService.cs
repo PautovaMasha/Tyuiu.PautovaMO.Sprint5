@@ -33,7 +33,7 @@ namespace Tyuiu.PautovaMO.Sprint5.Task2.V30.Lib
                     // Добавляем разделитель, если не последний элемент в строке
                     if (j < cols - 1)
                     {
-                        fileContent += "; ";
+                        fileContent += ";";
                     }
                 }
 
