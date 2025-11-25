@@ -26,6 +26,7 @@ namespace Tyuiu.PautovaMO.Sprint5.Task7.V29.Lib
                 {
                     // Удаляем все однозначные числа из текущей строки
                     strLine = Regex.Replace(line, @"\b\d\b", "");
+                    strLine = Regex.Replace(strLine, @"\s+", " ").Trim();
 
                     // Записываем обработанную строку в файл
                     File.AppendAllText(pathSaveFile, strLine + Environment.NewLine);
