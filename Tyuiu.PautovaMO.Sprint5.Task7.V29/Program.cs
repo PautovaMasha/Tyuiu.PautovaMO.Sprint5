@@ -29,17 +29,16 @@ namespace Tyuiu.PautovaMO.Sprint5.Task7.V29
             Console.WriteLine("***************************************************************************");
 
             string path = @"C:\DataSprint5\InPutDataFileTask7V29.txt";
-            string pathSaveFile = @"C:\DataSprint5\OutPutDataFileTask7V29.txt";
-
             Console.WriteLine("Данные находятся в файле: " + path);
+
+            
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("находятся в файле: " );
-            pathSaveFile = ds.LoadDataAndSave(path);
-            Console.WriteLine(pathSaveFile);
+            string pathSaveFile = ds.LoadDataAndSave(path);
+            Console.WriteLine("Результат находится в файле: " + pathSaveFile);
             Console.ReadKey();
         }
     }
